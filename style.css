@@ -16,7 +16,7 @@ body {
 
 :root {
 	--primary-bg-color: #fafafa;
-	--editor-font-size: 11px;
+	--editor-font-size: 20px;
 }
 
 .container {
@@ -36,14 +36,15 @@ body {
 .container header h1 {
 	text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 	font-family: 'Atma', cursive;
-	font-size: 48px;
+	font-size: 75px;
 	font-weight: bold;
+	margin-top: -40px;
 }
 
 .container header sub a {
 	color: var(--primary-bg-color);
 	font-family: 'Atma', cursive;
-	font-size: 16px;
+	font-size: 26px;
 	font-weight: bold;
 	text-decoration: none;
 	text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -81,6 +82,8 @@ body {
 	border: none;
 	font-size: var(--editor-font-size);
 	color: rgb(70, 70, 70);
+	font-family: 'Atma', cursive;
+	letter-spacing: 1px;
 }
 
 #input-area:focus {
@@ -95,6 +98,7 @@ body {
 	border-top: 2px dashed lightgrey;
 	font-size: var(--editor-font-size);
 	color: rgb(70, 70, 70);
+	font-family: 'Atma', cursive;
 }
 
 #output-area:focus {
@@ -113,18 +117,18 @@ body {
 }
 
 .container .box .btns .btn {
-	width: 22px;
-	height: 22 px;
+	width: 35px;
+	height: 35px;
 	cursor: pointer;
 	margin: 0 12px;
 }
 
 @media screen and (max-width: 800px) {
 	.container header h1 {
-		font-size: 40px;
+		font-size: 50px;
 	}
 	.container header sub a {
-		font-size: calc(var(--editor-font-size) - 2px);
+		font-size: 22px;
 	}
 	#input-area {
 		font-size: calc(var(--editor-font-size) - 2px);
@@ -133,8 +137,29 @@ body {
 		font-size: calc(var(--editor-font-size) - 2px);
 	}
 	.container .box .btns .btn {
-		width: 18px;
-		height: 18px;
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+		margin: 0 4px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.container header h1 {
+		font-size: 40px;
+	}
+	.container header sub a {
+		font-size: 15px;
+	}
+	#input-area {
+		font-size: calc(var(--editor-font-size) - 2px);
+	}
+	#output-area {
+		font-size: calc(var(--editor-font-size) - 2px);
+	}
+	.container .box .btns .btn {
+		width: 30px;
+		height: 30px;
 		cursor: pointer;
 		margin: 0 4px;
 	}
