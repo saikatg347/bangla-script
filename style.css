@@ -82,8 +82,6 @@ body {
 	border: none;
 	font-size: var(--editor-font-size);
 	color: rgb(70, 70, 70);
-	font-family: 'Atma', cursive;
-	letter-spacing: 1px;
 }
 
 #input-area:focus {
@@ -98,7 +96,6 @@ body {
 	border-top: 2px dashed lightgrey;
 	font-size: var(--editor-font-size);
 	color: rgb(70, 70, 70);
-	font-family: 'Atma', cursive;
 }
 
 #output-area:focus {
