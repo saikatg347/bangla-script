@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery.bangla@1/dist/jquery.bangla.js"></script>
+		<title>Editor UI</title>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>
+					&lt; বাংলা-স্ক্রিপ্ট /&gt;
+					<sub>
+						<a href="https://github.com/saikatg347" target="_blank" rel="noopener noreferrer"
+							>&nbsp; @saikatg347</a
+						>
+					</sub>
+				</h1>
+			</header>
+			<div class="box" id="editor">
+				<div class="bar-left"></div>
+				<textarea id="input-area" placeholder="Enter code here..."></textarea>
+				<div class="btns">
+					<img src="refresh-2-32.png" class="btn" id="reset-btn" alt="Reset" onclick="reset()" />
+					<img src="play-32.png" class="btn" id="run-btn" alt="Run" onclick="handleSubmit()" />
+				</div>
+				<textarea id="output-area" placeholder="Output will be printed here..." readonly></textarea>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
