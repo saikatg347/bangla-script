@@ -6,7 +6,7 @@ This is just a static website demonstrating the api. I'll upload the source code
 ## Tutorial :
 ### console output statement :
 
-    লেখো("হ্যালো, পৃথিবী")vv
+    লেখো("হ্যালো, পৃথিবী")
 ### variable declaration :
 
     ধরি এক্স = ১০
