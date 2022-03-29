@@ -44,7 +44,7 @@ body {
 .container header sub a {
 	color: var(--primary-bg-color);
 	font-family: 'Atma', cursive;
-	font-size: 26px;
+	font-size: 24px;
 	font-weight: bold;
 	text-decoration: none;
 	text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
