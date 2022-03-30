@@ -22,11 +22,21 @@ const handleSubmit = async () => {
 		body: urlencoded,
 		redirect: 'follow',
 	}
+	const response = await fetch('https://bangla-script-api.herokuapp.com/run', requestOptions)
+	const output = await response.json()
 
-	fetch('https://bangla-script-api.herokuapp.com/run', requestOptions)
-		.then((response) => response.json())
-		.then((result) => setOutput(result))
-		.catch((error) => setOutput('error', error))
+	if (typeof output === 'string') {
+		setOutput(output)
+	} else {
+		setOutput(
+			'Some error occured!\nCurrently there is no error handling so please check your code again for any syntax errors!!\nRefer to the documentation for basic syntax!!'
+		)
+	}
+
+	// fetch('https://bangla-script-api.herokuapp.com/run', requestOptions)
+	// 	.then((response) => response.json())
+	// 	.then((result) => setOutput(result))
+	// 	.catch((error) => setOutput('error', JSON.stringify(error, undefined, 2)))
 }
 
 const reset = () => {
