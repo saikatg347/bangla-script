@@ -10,9 +10,7 @@ This is just a static website demonstrating the api. I'll upload the source code
 ### variable declaration :
 
     ধরি এক্স = ১০
-### variable assignment :
-
-    ভ্যারিয়াবল = ভ্যালু
+    
 ### conditional statement :
 
     যদি(৫ > ২){
